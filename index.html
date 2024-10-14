@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bulb</title>
+        <style>
+            body{
+                background-color:black;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="./pic_bulboff.gif" alt="">
+        <button onclick="light()">light</button>
+
+        <button onclick=on()>On</button>
+        <button onclick=off()>off</button>
+    </body>
+    <script>
+        function light(){
+            document.querySelectorAll("button")[0].innerText="dark"
+            document.querySelector("body").style.background="white"
+        }
+        function on(){
+            document.querySelector("img").src="./pic_bulbon.gif"
+        }
+        function off(){
+            document.querySelector("img").src="./pic_bulboff.gif"
+        }
+    </script>
+</html>
